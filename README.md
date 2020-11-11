@@ -47,3 +47,28 @@
 		8 10
 	Out:
 		6 (Можливі пари - 1/8, 1/10,  3/8, 3/10,  5/8, 5/10)
+
+## Solution
+
+#### Problem was mainly solved by using union-find algorithm
+
+- at first step we divide all connected people into tribes using modification of union-find algorithm and fill special counter lists with girls and boys amount per tribe
+- then calculate cross product of two gender counter lists to get all possible pairs
+    
+## How-to-use instructions
+- clone repository
+- open project folder in console
+- do either:
+    - run `python solution/main.py` in console
+- or:
+  - open `solution` folder
+  - run `python main.py`
+
+## Algorithm analysis
+
+### Time complexity
+O(N(N*T))
+where T is amount of newly formed tribes
+ 
+### Space complexity
+O(N)
